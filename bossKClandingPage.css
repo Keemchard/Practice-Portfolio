@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  line-height: 1.9rem;
+}
+li {
+  list-style: none;
+}
+span {
+  color: #ff3c00;
+  border-top: dotted;
+}
+
+.nav-bar {
+  padding: 25px 40px;
+  display: flex;
+}
+.logo {
+  flex: 2;
+}
+.menus {
+  flex: 1;
+}
+.menus ul {
+  display: flex;
+  justify-content: space-between;
+  color: #ff3c00;
+  font-weight: bold;
+}
+
+.first-container {
+  background-image: url(images/orange-abstract.png);
+  background-size: cover;
+  height: 100vh;
+}
+.first-container-content {
+  color: white;
+  display: flex;
+
+  padding-top: 13em;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.main-content {
+  order: 1;
+
+  padding: 30px 40px;
+  border-right: 3px #ff3c00 solid;
+}
+.main-content h1 {
+  font-size: 80px;
+}
+.main-content p {
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 30px;
+  color: rgb(168, 158, 154);
+}
+.main-content button {
+  margin-top: 20px;
+  padding: 15px 60px;
+  border-radius: 1.5em;
+  border: 2px #ff3c00 solid;
+  background-color: black;
+}
+.main-content button a {
+  color: #ff3c00;
+  text-decoration: none;
+  font-size: 18px;
+}
+.right-sidebar {
+  order: 2;
+  padding: 30px 40px;
+}
+.right-sidebar p {
+  font-size: 25px;
+  line-height: 1.5em;
+  color: rgb(248, 240, 237);
+  text-align: left;
+}
+
+.white-container {
+  height: 100vh;
+
+  display: flex;
+  text-align: center;
+  padding: 20px 50px;
+}
+.white-container > div {
+  padding: 15px 40px;
+  height: 70vh;
+  margin: 8px;
+  margin-top: 4em;
+  border: #ff3c00 3px solid;
+  border-radius: 2em;
+  background-color: rgb(20, 19, 19);
+  background-image: url(images/orange-abstract.png);
+}
+.white-container h2 {
+  font-size: 30px;
+  padding: 30px 0px;
+  color: #ff3c00;
+}
+
+.white-container p {
+  margin-top: 1em;
+  line-height: 2em;
+  font-size: 17px;
+  color: white;
+}
+.mid {
+  order: 2;
+}
+.left {
+  order: 1;
+}
+.rigth {
+  order: 3;
+}
+
+.black-container {
+  background-color: rgb(20, 19, 19);
+  background-image: url(images/orangeee.png);
+  background-size: cover;
+  height: 80vh;
+  padding: 20px 40px;
+  display: flex;
+}
+
+.black-container > div {
+  margin: 3px;
+  margin-top: 3em;
+  height: 60vh;
+  border-radius: 1em;
+}
+
+.first {
+  background: transparent;
+  flex: 2;
+  text-align: center;
+  padding: 20px 20px;
+}
+.first p {
+  margin-top: 5em;
+  font-size: 20px;
+  color: white;
+}
+.second {
+  background: transparent;
+  text-align: center;
+  flex: 1;
+  padding: 20px 20px;
+  border: #ff3c00 1px solid;
+}
+
+.second h1 {
+  font-size: 40px;
+  color: white;
+  line-height: 1.5em;
+  margin-top: 2.5em;
+
+  border-top: #ff3c00 dotted;
+  border-bottom: #ff3c00 dotted;
+}
+.neutral {
+  color: #ff3c00;
+  border: none;
+}
+
+.footer {
+  height: 40vh;
+  background-color: white;
+}
+.inside-foot {
+  margin-top: 3em;
+  background-color: rgb(20, 19, 19);
+  padding: 6.5em;
+  text-align: center;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  color: white;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1000px) {
+  .menus {
+    display: none;
+  }
+
+  .first-container-content {
+    padding-top: 2.5em;
+    flex-direction: column;
+  }
+  .main-content {
+    border-right: none;
+  }
+  .right-sidebar p {
+    padding-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    border-left: #ff3c00 dotted;
+    border-right: #ff3c00 dotted;
+  }
+
+  .white-container {
+    height: 90vh;
+  }
+  .white-container > div {
+    margin-top: 2em;
+    padding: 0px;
+    height: 70vh;
+  }
+  .white-container p {
+    padding: 0 3px;
+    line-height: 30px;
+    font-size: 15px;
+  }
+  .white-container h2 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .white-container {
+    height: 110vh;
+    flex-direction: column;
+  }
+  .white-container > div {
+    margin: 2px;
+    border: 2px solid #ff3c00;
+    background-position: 50%;
+  }
+
+  .white-container h2 {
+    padding: 0;
+    padding-top: 20px;
+  }
+
+  .black-container {
+    flex-direction: column;
+    padding: 0px 20px;
+  }
+  .first {
+    order: 2;
+    padding: 0px;
+    margin: 0;
+  }
+  .second {
+    order: 1;
+    padding: 0;
+    margin: 0;
+  }
+  .second h1 {
+    margin: 0;
+    padding: 30px 0px;
+    border: none;
+  }
+  .black-container p {
+    font-size: 15px;
+    margin: 0px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main-content h1 {
+    font-size: 50px;
+  }
+  .main-content p {
+    font-size: 20px;
+  }
+  .main-content button {
+    padding: 15px;
+  }
+  .right-sidebar p {
+    font-size: 15px;
+  }
+  .white-container {
+    height: 150vh;
+  }
+  .black-container {
+    height: 100vh;
+  }
+}

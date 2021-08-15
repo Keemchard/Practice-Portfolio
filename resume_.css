@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(30, 32, 32);
+  color: white;
+  /* background: aqua; */
+}
+a {
+  color: white;
+}
+p {
+  line-height: 1.9rem;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-weight: bold;
+}
+.link:hover {
+  color: #ff3c00;
+}
+span {
+  color: #ff3c00;
+  font-weight: bold;
+}
+.upper {
+  padding: 30px 0px;
+  /* background: yellow; */
+  text-align: center;
+}
+.downer {
+  /* background: lightslategrey; */
+  padding: 20px;
+}
+.education {
+  margin-top: 20px;
+  /* background: tomato; */
+}
+.education > div {
+  padding: 30px;
+  border-left: dotted #ff3c00;
+}
+.automotive {
+  /* background: green; */
+}
+.automotive p {
+  line-height: 20px;
+}
+.CpE {
+  /* background: hotpink; */
+}
+.CpE p {
+  line-height: 20px;
+}
+
+.skills {
+  /* background: yellow; */
+}
+.skills h2 {
+}
+.rows {
+  display: flex;
+  padding: 20px;
+}
+.rows > div {
+  border: 1px solid #ff3c00;
+  padding: 10px;
+  margin: 3px;
+  border-radius: 10px;
+}
+.first-row {
+  flex: 1;
+}
+.second-row {
+  flex: 1;
+}
+
+.activities {
+  height: 20vh;
+}
+.activities h2 {
+  margin-top: 20px;
+}
+.activities p {
+  margin: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  .rows {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 20px 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: whitesmoke;
+}
+.container {
+  margin: auto;
+  background: whitesmoke;
+  display: flex;
+  padding: 10px;
+}
+
+.facebook-text {
+  flex: 1;
+  padding: 10em;
+  padding-left: 9em;
+  padding-right: 0em;
+}
+.facebook-text h1 {
+  font-size: 60px;
+  color: rgb(35, 68, 255);
+}
+.facebook-text p {
+  padding-top: 10px;
+  font-size: 24px;
+}
+
+.facebook-login {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+.log {
+  border: white 1px solid;
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-top: 5em;
+  padding: 10px;
+}
+.log input {
+  padding: 15px;
+  margin: 5px 0px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  border: lightgray 1px solid;
+}
+.log button {
+  padding: 15px;
+  margin: 5px 0px;
+  border-radius: 8px;
+  border: none;
+}
+.login-btn {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background: rgb(35, 68, 255);
+}
+.create-btn {
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  background: #1cb943;
+}
+.log a {
+  text-decoration: none;
+  font-size: 15px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  color: rgb(35, 68, 255);
+  border-bottom: 1px lightgray solid;
+}
+.log > div {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.page {
+  width: 400px;
+  padding-top: 22px;
+  font-size: 15px;
+}
+span {
+  font-weight: bold;
+}

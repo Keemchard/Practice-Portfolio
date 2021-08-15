@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* #ff3c00 rgb(13, 14, 14) rgb(30, 32, 32) */
+}
+body {
+  background-color: rgb(13, 14, 14);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  line-height: 1.9rem;
+  font-family: monospace;
+  font-size: 15px;
+  color: white;
+}
+.p-major {
+  font-size: 20px;
+  font-weight: bold;
+
+  margin-bottom: 20px;
+  color: #ff3c00;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  background-color: rgb(30, 32, 32);
+  margin-top: 2em;
+  margin-bottom: 2em;
+  height: 100vh;
+  border-radius: 20px;
+  padding: 20px;
+}
+span:hover {
+  color: #ff3c00;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.title {
+  color: white;
+  text-align: center;
+  margin: 30px 0px;
+  font-size: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.proj {
+  color: #ff3c00;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.content > div {
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  padding: 10px;
+}
+/* .first {
+  background-color: bisque;
+} */
+button {
+  padding: 70px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: none;
+}
+button:hover {
+  border: 2px solid #ff3c00;
+  cursor: pointer;
+}
+.btn-1 {
+  background-image: url(images/BossKC_.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+.btn-2 {
+  background-image: url(images/facebook-logo.png);
+  background-size: contain;
+  background-position: center;
+  background-color: black;
+}
+.btn-3 {
+  background-image: url(images/cvsu.png);
+  background-position: center;
+  background-size: contain;
+  background-color: black;
+}
+
+@media only screen and (max-width: 1165px) {
+  .title {
+    font-size: 25px;
+  }
+  p {
+    line-height: 1.5rem;
+  }
+  .container {
+    height: 250vh;
+    width: 90%;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .content > div {
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 1px solid gray;
+    border-radius: 20px;
+  }
+}

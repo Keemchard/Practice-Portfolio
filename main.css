@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background: rgb(13, 14, 14);
+}
+p {
+  line-height: 1.5rem;
+  font-family: monospace;
+  font-size: 15px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  /* color: rgb(241, 94, 94); */
+  color: #ff3c00;
+}
+
+.container {
+  margin: 60px;
+  border-radius: 20px;
+  background: rgb(30, 32, 32);
+  border: 1px solid rgb(46, 47, 47);
+  border-left: 5px rgb(46, 47, 47) solid;
+  border-bottom: 5px rgb(46, 47, 47) solid;
+}
+.container > div {
+  /* border: 1px solid darkgray; */
+}
+.nav-content {
+  height: 4em;
+  width: 400px;
+  margin: auto;
+}
+.nav-content ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding-top: 22px;
+}
+.nav-content li {
+  font-size: 16px;
+  font-weight: bold;
+}
+.intro-content {
+  height: 33vh;
+  padding: 25px 40px;
+  padding-bottom: 0px;
+}
+.myName-span {
+  font-size: 80px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ff3c00;
+}
+.extra {
+  font-size: 50px;
+  color: #ff3c00;
+}
+.course-span {
+  font-weight: bold;
+  font-size: 20px;
+}
+.feel-free {
+  font-size: 18px;
+}
+
+.project-content {
+  color: white;
+  height: 50vh;
+  display: flex;
+  margin: 10px;
+}
+
+.left {
+  /* background: gray; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.left > div {
+  border: 2px solid rgb(76, 78, 78);
+  margin: 10px;
+  border-radius: 20px;
+}
+.one {
+  flex: 1;
+  display: flex;
+}
+.one > div {
+  /* border: 1px lightyellow solid; */
+}
+.pic-one {
+  margin: 10px;
+  width: 130px;
+  border-radius: 20px;
+  background-image: url(images/Java.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pic-one:hover {
+  border: #ff3c00 2px solid;
+}
+.pic-two:hover {
+  border: #ff3c00 2px solid;
+}
+.pic-three:hover {
+  border: #ff3c00 2px solid;
+}
+.pic-four:hover {
+  border: #ff3c00 2px solid;
+}
+
+.txt-one {
+  flex: 1;
+  margin: 10px;
+  margin-left: 0px;
+}
+.two {
+  flex: 1;
+  display: flex;
+}
+.two > div {
+  /* border: 1px lightyellow solid; */
+}
+.pic-two {
+  margin: 10px;
+  width: 130px;
+  border-radius: 20px;
+  background-image: url(images/BossKC_.png);
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.txt-two {
+  flex: 1;
+  margin: 10px;
+  margin-left: 0px;
+}
+
+.right {
+  /* background: rgb(87, 163, 163); */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.right > div {
+  border: 2px solid rgb(76, 78, 78);
+  margin: 10px;
+  border-radius: 20px;
+}
+.three {
+  flex: 1;
+  display: flex;
+}
+.three > div {
+  /* border: 1px lightyellow solid; */
+}
+.pic-three {
+  margin: 10px;
+  width: 130px;
+  border-radius: 20px;
+  background-image: url(images/Gleent.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.txt-three {
+  flex: 1;
+  margin: 10px;
+  margin-left: 0px;
+}
+.four {
+  flex: 1;
+  display: flex;
+}
+.four > div {
+  /* border: 1px lightyellow solid; */
+}
+.pic-four {
+  margin: 10px;
+  width: 130px;
+  border-radius: 20px;
+  background-image: url(images/other_projects.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.txt-four {
+  flex: 1;
+  margin: 10px;
+  margin-left: 0px;
+}
+
+.java {
+  font-size: 25px;
+  font-weight: bold;
+}
+.java:hover {
+  color: #ff3c00;
+}
+.bossKC {
+  font-size: 25px;
+  font-weight: bold;
+}
+.bossKC:hover {
+  color: #ff3c00;
+}
+.KC {
+  color: #ff3c00;
+  border-top: dotted #ff3c00;
+  font-size: 23px;
+  font-family: cursive;
+}
+.KC:hover {
+  color: white;
+  border-top: dotted white;
+}
+.gleent {
+  font-size: 25px;
+  font-weight: bold;
+}
+.gleent:hover {
+  color: #ff3c00;
+}
+.other-project {
+  font-size: 25px;
+  font-weight: bold;
+}
+.other-project:hover {
+  color: #ff3c00;
+}
+/* Media Query */
+@media only screen and (max-width: 1000px) {
+  .nav-content li {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .project-content {
+    height: 100vh;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .myName-span {
+    font-size: 50px;
+  }
+  .extra {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .intro-content {
+    padding: 15px;
+  }
+  .nav-content {
+    margin: auto;
+
+    width: 100%;
+  }
+  .nav-content ul {
+    padding-top: 10px;
+    justify-content: center;
+  }
+  .nav-content li {
+    font-size: 13px;
+    margin: 10px;
+  }
+
+  .container {
+    margin: 20px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .myName-span {
+    font-size: 40px;
+  }
+  .course-span {
+    font-size: 17px;
+  }
+  .intro-content p {
+    font-size: 15px;
+  }
+}
+/* dasdadasdasdas */
+
+@media only screen and (max-width: 500px) {
+  .intro-content {
+    padding-bottom: 20px;
+    height: 30vh;
+  }
+  .java {
+    font-size: 15px;
+  }
+  .bossKC {
+    font-size: 15px;
+  }
+  .KC {
+    font-size: 17px;
+  }
+  .gleent {
+    font-size: 15px;
+  }
+  .other-project {
+    font-size: 15px;
+  }
+  .a {
+    font-size: 10px;
+    line-height: 1rem;
+  }
+  .b {
+    font-size: 10px;
+    line-height: 1rem;
+  }
+  .c {
+    font-size: 10px;
+    line-height: 1rem;
+  }
+  .d {
+    font-size: 10px;
+    line-height: 1rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .container {
+    margin: 3px;
+  }
+
+  .project-content {
+    height: 85vh;
+  }
+  .pic-one {
+    flex: 1;
+  }
+  .txt-one {
+    flex: 2;
+  }
+  .pic-two {
+    flex: 1;
+  }
+  .txt-two {
+    flex: 2;
+  }
+
+  .pic-three {
+    flex: 1;
+  }
+  .txt-three {
+    flex: 2;
+  }
+  .pic-four {
+    flex: 1;
+  }
+  .txt-four {
+    flex: 2;
+  }
+}
